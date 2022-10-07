@@ -1,0 +1,256 @@
+// Базовые настройки 
+@import 'reset'
+
+//Шрифты
+@import 'fonts'
+
+// Шапка 
+@import 'global'
+
+.header
+    align-items: center
+    position: fixed
+
+    top: 30px
+    z-index: 2
+    left: 0
+    right: 0
+
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 30px
+        text-transform: uppercase
+
+.menu
+
+    &__list
+        +medium
+        font-size: 15px
+        line-height: 17px
+        letter-spacing: 0em
+        text-align: left
+        align-items: center
+        display: flex
+
+    &__list-item
+        margin: 0 10px
+
+.header__info
+    display: flex
+    align-items: center
+
+.header__btn
+    +medium
+    font-size: 15px
+    line-height: 17px
+    letter-spacing: 0em
+    text-align: left
+    text-transform: uppercase
+
+    transition: all .5s
+    &:hover
+        background: #ffffff
+        color: #000000
+
+.header__phone
+    +bold
+    font-size: 16px
+    line-height: 18px
+    letter-spacing: 0em
+    text-align: left
+
+    margin-left: 9px
+
+//section top
+.top
+    background-image: url('../image/content/main-cover.png')
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    position: relative
+    text-align: center
+    display: flex
+    align-items: flex-end
+
+    &__wrap
+        display: flex
+        align-items: center
+        flex-direction: column
+
+    &__title
+        +sf-semibold
+        font-size: 96px
+        line-height: 115px
+        letter-spacing: 0em
+        text-align: left
+
+        margin-bottom: 25px
+
+    &__text
+        +light
+        font-size: 17px
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: center
+        width: 325px
+        margin: 25px 0 35px
+
+    &__social-list
+        margin-bottom: 13px
+        display: flex
+        justify-content: center
+
+    &__social-item
+        display: inline-block
+        margin: 0 25px
+
+    &__social-link
+        opacity: 0.5
+        transition: all .5s
+        &:hover
+            opacity: 1
+
+// section products
+.products
+    padding-left: 50px
+
+    &__wrap
+        display: flex
+        justify-content: space-between
+
+    &__text
+        +light
+        font-size: 17px
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: left
+        max-width: 440px
+        p
+            padding-bottom: 30px
+
+    &__slider-box
+        position: relative
+
+    &__slider-text
+        +medium
+        font-size: 24px
+        line-height: 28px
+        letter-spacing: 0em
+        text-align: right
+        width: 285px
+        z-index: 5
+        position: absolute
+        bottom: 30px
+        left: -150px
+
+    &__slider
+        max-width: 560px
+        position: relative // Всегда вкл !!!
+        &::before
+            content: ''
+            bottom: 0
+            top: -15px
+            left: 17px
+            position: absolute
+            width: 560px
+            height: 300px
+            border: 4px #fff solid
+
+.producrs__slider,.slick-arrow
+    width: 60px
+    height: 48px
+    border: 0
+    border-radius: 0px
+
+.button-nav
+    position: absolute
+    right: 0
+    top: calc( 100% - 7px)
+    font-size: 0
+    display: flex
+
+.slider__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+
+.slider__btn-left
+    background: #1C1C1C
+    cursor: pointer
+
+.slider__btn-right
+    background: #ffffff
+    cursor: pointer
+
+// Слайдер  setting
+.slick-slider
+    display: flex
+    min-width: 0
+
+// Ограничивающая оболочка 
+.slick-list
+    overflow: hidden
+
+// Лента слайдов 
+.slick-track
+    display: flex
+
+// section benefits
+
+.benefits
+
+    &__items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__item
+        margin: 0px 0 103px 0
+        position: relative
+        display: flex
+
+    &__num
+        +bold
+        font-size: 36px
+        line-height: 41px
+        letter-spacing: 0em
+        text-align: left
+        position: absolute
+        right: calc( 100% + 10px )
+        bottom: 0
+
+    &__img
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            bottom: 0
+            top: -12px
+            left: 12px
+            position: absolute
+            width: 195px
+            height: 130px
+            border: 2px #fff solid
+
+    &__info
+        text-align: left
+        max-width: 300px
+        margin-left: 32px
+
+    &__info-title
+        +bold
+        font-size: 21px
+        line-height: 24px
+        letter-spacing: 0em
+        text-align: left
+        max-width: 205px
+
+    &__text
+        +light
+        font-size: 15px
+        line-height: 19px
+        letter-spacing: 0em
+        text-align: left
