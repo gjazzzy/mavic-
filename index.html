@@ -30,16 +30,16 @@
                             <a class="menu__list-link link-line" href="#products">О дроне</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#benefits">Преимущества</a>
+                            <a class="menu__list-link link-line" href="#benefits">Преимущества</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#specification">Характиристики</a>
+                            <a class="menu__list-link link-line" href="#specification">Характиристики</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#question">Вопросы</a>
+                            <a class="menu__list-link link-line" href="#question">Вопросы</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#contacts">Контакты</a>
+                            <a class="menu__list-link link-line" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                     <!-- /.menu__list -->
@@ -49,9 +49,14 @@
                 <div class="header__info">
                     <button class="header__btn">Купить</button>
                     <!-- /.header__btn -->
-                    <a class="header__phone" href="tel:+70505676767">8 (050) 567 67 67</a>
+                    <a class="header__phone link-line " href="tel:+70505676767">8 (050) 567 67 67</a>
                 </div>
                 <!-- /.header__info -->
+
+                <button class="header__humburger">
+                    <img src="image/header__btn.svg" alt="#">
+                </button>
+                <!-- /.header__btn -->
 
             </div>
             <!-- /.header__wrap -->
@@ -68,7 +73,11 @@
                 </h1>
                 <!-- ./top__title -->
 
-                <img src="image/content/dron.png" alt="#">
+                <picture class="top__img">
+                    <source srcset="image/top__modile-img.png" media="(max-width:440px)">
+                    <source srcset="image/top__medium-img.png" media="(max-width:730px)">
+                    <img src="image/content/dron.png" alt="#">
+                </picture>
 
                 <p class="top__text">
                     Квадрокоптер Dji Mavic 2 Pro
@@ -94,7 +103,7 @@
         <!-- /.container -->
 
         <div class="scroll__btn">
-            <a href="#products"><img src="image/arrow__page-down.svg" alt="#"></a>
+            <a class="scroll__link" href="#products"><img src="image/arrow__page-down.svg" alt="#"></a>
         </div>
         <!-- /.scroll__btn -->
     </section>
@@ -182,7 +191,7 @@
                 <!-- /.benefits__title -->
 
                 <div class="benefits__items">
-                    <div class="benefits__item">
+                    <div class="benefits__item benefits__item-1">
                         <div class="benefits__num">1</div>
                         <div class="benefits__img">
                             <img class="benefits__img" src="image/benefits-1.jpg" alt="">
@@ -196,14 +205,14 @@
 
                             <p class="benefits__text">
                                 Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки
-                                QuickShot:Roket/Dronie/Circle/Helix/Boomerang/Asteroid.
+                                QuickShot:Roket /Dronie /Circle /Helix /Boomerang /Asteroid.
                             </p>
                         </div>
                         <!-- /.benefits__info -->
                     </div>
                     <!-- /.benefits__item -->
 
-                    <div class="benefits__item">
+                    <div class="benefits__item benefits__item-2">
                         <div class="benefits__num">2</div>
                         <div class="benefits__img">
                             <img class="benefits__img" src="image/benefits-2.jpg" alt="">
@@ -223,7 +232,7 @@
                     </div>
                     <!-- /.benefits__item -->
 
-                    <div class="benefits__item">
+                    <div class="benefits__item benefits__item-3">
                         <div class="benefits__num">3</div>
                         <div class="benefits__img">
                             <img class="benefits__img" src="image/benefits-3.jpg" alt="">
@@ -277,7 +286,7 @@
         <!-- /.container -->
 
         <div class="scroll__btn">
-            <a href="#specification"><img src="image/arrow__page-down.svg" alt="#"></a>
+            <a class="scroll__link" href="#specification"><img src="image/arrow__page-down.svg" alt="#"></a>
         </div>
         <!-- /.scroll__btn -->
     </section>
@@ -292,7 +301,7 @@
             <div class="specification__wrap">
 
                 <div class="specification__item">
-                    <div class="specification__box">
+                    <div class="specification__box specification__box-1">
                         <h4 class="specification__box-title">Dlog-M 10 бит</h4>
                         <p class="specification__box-text">
                             Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с
@@ -302,7 +311,7 @@
                     </div>
                     <!-- /.specification__box -->
 
-                    <div class="specification__box">
+                    <div class="specification__box specification__box-2">
                         <h4 class="specification__box-title">Камера Hasselblad</h4>
                         <p class="specification__box-text">
                             Камера Hasselblad L1D-20С
@@ -314,14 +323,19 @@
                 </div>
                 <!-- /.specification__item -->
 
-                <div class="specification__item">
+                <!-- <div class="specification__item">
                     <img src="image/content/dron.png" alt="#">
-                </div>
+                </div> -->
+                <picture class="specification__item-img">
+                    <source srcset="image/top__modile-img.png" media="(max-width:440px)">
+                    <source srcset="image/top__medium-img.png" media="(max-width:730px)">
+                    <img src="image/content/dron.png" alt="#">
+                </picture>
                 <!-- /.specification__item -->
 
                 <div class="specification__item">
 
-                    <div class="specification__box">
+                    <div class="specification__box specification__box-3">
                         <h4 class="specification__box-title">Матрица CMOS 1</h4>
                         <p class="specification__box-text">
                             Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic
@@ -330,7 +344,7 @@
                     </div>
                     <!-- /.specification__box -->
 
-                    <div class="specification__box">
+                    <div class="specification__box specification__box-4">
                         <h4 class="specification__box-title">Видео HDR</h4>
                         <p class="specification__box-text">
                             Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG
@@ -347,7 +361,7 @@
         <!-- /.container -->
 
         <div class="scroll__btn">
-            <a href="#question"><img src="image/arrow__page-down.svg" alt="#"></a>
+            <a class="scroll__link" href="#question"><img src="image/arrow__page-down.svg" alt="#"></a>
         </div>
         <!-- /.scroll__btn -->
     </section>
@@ -418,7 +432,7 @@
         <!-- /.container -->
 
         <div class="scroll__btn">
-            <a href="#contacts"><img src="image/arrow__page-down.svg" alt="#"></a>
+            <a class="scroll__link" href="#contacts"><img src="image/arrow__page-down.svg" alt="#"></a>
         </div>
         <!-- /.scroll__btn  question-->
     </section>
@@ -498,6 +512,9 @@
             <!-- /.title -->
         </div>
         <!-- /.container -->
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#top"><img src="image/arrow__page-up.svg" alt="#"></a>
+        </div>
     </section>
     <!-- /.page-section contacts -->
 

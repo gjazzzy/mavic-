@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.products__slider').slick({
-    prevArrow:'<button class="slider-btn slider__btn-left"><img src="image/arrow-prev.svg" alt="#"></button>',
-    nextArrow:'<button class="slider-btn slider__btn-right"><img src="image/arrow-next.svg" alt="#"></button>',
+    prevArrow: '<button class="slider-btn slider__btn-left"><img src="image/arrow-prev.svg" alt="#"></button>',
+    nextArrow: '<button class="slider-btn slider__btn-right"><img src="image/arrow-next.svg" alt="#"></button>',
     arrows: true, //Вкл стрелок
     dots: false, // Вкл точек
     adaptiveHeight: true, // Адаптивные точки
@@ -23,23 +23,31 @@ $(document).ready(function () {
     centerMode: true, // Центральный слайд
     variableWidth: true, // Авто-Адаптивный слайдер 
 
-  
-  appendArrows:$('.button-nav') // Расположение стрелок в отдельном меню 
-  
-  // responsive:[ // брекПоинт и его настройка
-  //   {
-  //     breakpoint: 500,
-  //     settings: {
-  //       slidesToShow:2
-  //     }
-  //   }, {
-  //      breakpoint: 900,
-  //     settings: {
-  //       slidesToShow: 2
-  //     }
-  //   }
-  //   ],
-  // mobileFirst: true,// miv-width !
+
+    appendArrows: $('.button-nav'), // Расположение стрелок в отдельном меню 
+
+    //   responsive: [ // брекПоинт и его настройка
+    //     {
+    //       breakpoint: 730,
+    //       settings: {
+    //         centerMode: true, // Центральный слайд
+    //         variableWidth: true, // Авто-Адаптивный слайдер 
+
+
+    //       },
+    //       // }, {
+    //       //    breakpoint: 900,
+    //       //   settings: {
+    //       //     slidesToShow: 2
+    //       //   }
+    //     }
+    //   ],
+    //   // mobileFirst: true,// miv-width !
   });
+});
+
+$('.question__item-title').on('click', function () {
+  $('.question__item').removeClass('question__item--active');
+  $(this).parent().addClass('question__item--active');
 });
 

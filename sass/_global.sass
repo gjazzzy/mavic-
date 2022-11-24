@@ -18,6 +18,7 @@ html
     &:hover::before
         width: 100%
         left: 0
+
 .container
     max-width: 1270px
     margin: 0 auto
@@ -44,11 +45,23 @@ body
     position: relative
 
 .scroll__btn
-    padding: 13px 0 30px
+    padding: 13px 5px
+    margin: 15px 0
     position: absolute
-    left: 0
     right: 0
+    left: 0
     bottom: 0
+
+.scroll__link
+    padding: 4px
+    border-radius: 20px
+    background: #ffffff46
+.scroll__link:hover
+    transition: 0.2s
+    border-radius: 20px
+    padding: 5px
+    border: 1px #fff solid
+    background: #ffffff00
 
 .title
     +sf-regular
