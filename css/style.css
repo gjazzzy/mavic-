@@ -92,9 +92,9 @@ body {
   font-weight: 300;
   font-size: 17px;
   line-height: 26px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-  background: #ffffff;
+  background: #283028;
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
@@ -387,48 +387,6 @@ body {
   margin-top: 20px;
   margin-right: 40px;
 }
-.benefits__item-1 {
-  position: relative;
-}
-.benefits__item-1::before {
-  content: "";
-  background-image: url("../image/benefints__line-1.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -65px;
-  top: 31px;
-  width: 250px;
-  height: 45px;
-}
-.benefits__item-2 {
-  position: relative;
-}
-.benefits__item-2::before {
-  content: "";
-  background-image: url("../image/benefints__line-2.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 560px;
-  top: 140px;
-  width: 465px;
-  height: 63px;
-}
-.benefits__item-3 {
-  position: relative;
-}
-.benefits__item-3::before {
-  content: "";
-  background-image: url("../image/benefints__line-3.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -100px;
-  top: 25px;
-  width: 255px;
-  height: 40px;
-}
 .benefits__num {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -493,40 +451,6 @@ body {
 }
 .specification__box {
   margin: 60px 0px;
-}
-.specification__box-1 {
-  position: relative;
-}
-.specification__box-1::before {
-  content: "";
-  background-image: url("../image/pointer-1.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -150px;
-  top: 10px;
-  width: 230px;
-  height: 115px;
-}
-.specification__box-2 {
-  position: relative;
-}
-.specification__box-2::before {
-  content: "";
-  background-image: url("../image/pointer-2.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -315px;
-  top: -55px;
-  width: 350px;
-  height: 80px;
-}
-.specification__box-3 {
-  position: relative;
-}
-.specification__box-4 {
-  position: relative;
 }
 .specification-title {
   font-family: "Ubuntu", sans-serif;
@@ -879,6 +803,18 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 5px;
+  }
+  .benefits {
+    overflow: hidden;
+  }
+  .benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .benefits__info {
+    margin: 10px 0 0 0;
   }
   .specification__item-img {
     display: none;

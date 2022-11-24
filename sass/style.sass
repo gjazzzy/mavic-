@@ -10,6 +10,7 @@
 @import 'media'
 
 .header
+    // display: none
     align-items: center
     position: fixed
     top: 30px
@@ -228,44 +229,44 @@
             margin-top: 20px
             margin-right: 40px
 
-    &__item-1
-        position: relative
-        &::before
-            content: ''
-            background-image: url('../image/benefints__line-1.svg')
-            background-position: 0 0
-            background-repeat: no-repeat
-            position: absolute
-            right: -65px
-            top: 31px
-            width: 250px
-            height: 45px
+    // &__item-1
+    //     position: relative
+    //     &::before
+    //         content: ''
+    //         background-image: url('../image/benefints__line-1.svg')
+    //         background-position: 0 0
+    //         background-repeat: no-repeat
+    //         position: absolute
+    //         right: -65px
+    //         top: 31px
+    //         width: 250px
+    //         height: 45px
 
-    &__item-2
-        position: relative
-        &::before
-            content: ''
-            background-image: url('../image/benefints__line-2.svg')
-            background-position: 0 0
-            background-repeat: no-repeat
-            position: absolute
-            right: 560px
-            top: 140px
-            width: 465px
-            height: 63px
+    // &__item-2
+    //     position: relative
+    //     &::before
+    //         content: ''
+    //         background-image: url('../image/benefints__line-2.svg')
+    //         background-position: 0 0
+    //         background-repeat: no-repeat
+    //         position: absolute
+    //         right: 560px
+    //         top: 140px
+    //         width: 465px
+    //         height: 63px
 
-    &__item-3
-        position: relative
-        &::before
-            content: ''
-            background-image: url('../image/benefints__line-3.svg')
-            background-position: 0 0
-            background-repeat: no-repeat
-            position: absolute
-            right: -100px
-            top: 25px
-            width: 255px
-            height: 40px
+    // &__item-3
+    //     position: relative
+    //     &::before
+    //         content: ''
+    //         background-image: url('../image/benefints__line-3.svg')
+    //         background-position: 0 0
+    //         background-repeat: no-repeat
+    //         position: absolute
+    //         right: -100px
+    //         top: 25px
+    //         width: 255px
+    //         height: 40px
 
     &__num
         +bold
@@ -329,35 +330,35 @@
     &__box
         margin: 60px 0px
 
-    &__box-1
-        position: relative
-        &::before
-            content: ''
-            background-image: url('../image/pointer-1.svg')
-            background-position: 0 0
-            background-repeat: no-repeat
-            position: absolute
-            right: -150px
-            top: 10px
-            width: 230px
-            height: 115px
+    // &__box-1
+    //     position: relative
+    //     &::before
+    //         content: ''
+    //         background-image: url('../image/pointer-1.svg')
+    //         background-position: 0 0
+    //         background-repeat: no-repeat
+    //         position: absolute
+    //         right: -150px
+    //         top: 10px
+    //         width: 230px
+    //         height: 115px
 
-    &__box-2
-        position: relative
-        &::before
-            content: ''
-            background-image: url('../image/pointer-2.svg')
-            background-position: 0 0
-            background-repeat: no-repeat
-            position: absolute
-            right: -315px
-            top: -55px
-            width: 350px
-            height: 80px
-    &__box-3
-        position: relative
-    &__box-4
-        position: relative
+    // &__box-2
+    //     position: relative
+    //     &::before
+    //         content: ''
+    //         background-image: url('../image/pointer-2.svg')
+    //         background-position: 0 0
+    //         background-repeat: no-repeat
+    //         position: absolute
+    //         right: -315px
+    //         top: -55px
+    //         width: 350px
+    //         height: 80px
+    // &__box-3
+    //     position: relative
+    // &__box-4
+    //     position: relative
 
     &-title
         +bold
@@ -711,6 +712,17 @@
             letter-spacing: 0em
             text-align: left
             margin-bottom: 5px
+
+    .benefits
+        overflow: hidden
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+        &__info
+            margin: 10px 0 0 0
 
     .specification__item-img
         display: none
